@@ -1,0 +1,53 @@
+movie-list {
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+}
+
+movie-list>.placeholder {
+    font-weight: bold;
+    color: rgba(200, 87, 87, 0.5);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+movie-item {
+    margin-bottom: 18px;
+    box-shadow: 0 4px 8px 0 rgba(197, 63, 63, 0.2);
+    border-radius: 10px;
+    display: block;
+    overflow: hidden;
+}
+
+movie-item:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+movie-item .fan-art-movie {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: left;
+}
+
+.movie-info {
+    padding: 24px;
+}
+
+.movie-info>h2 {
+    font-weight: lighter;
+}
+
+.movie-info>p {
+    margin-top: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+}
